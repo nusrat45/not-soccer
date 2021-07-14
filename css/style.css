@@ -1,0 +1,275 @@
+:root {
+    --main-bg-color: rgba(0, 0, 0, 0.8);
+    --header-bg-color:  #2c3e50;
+    --btn-bg-color: lightseagreen; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eeeeee;
+    color: #666666;
+    font-family: 'Poppins';
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #fffcec;
+}
+
+/* ###### COMMON REUSABLE CLASSES START ###### */
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn {
+    background-color: var(--btn-bg-color);
+    cursor: pointer;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.caption {
+    background-color: var(--header-bg-color);
+    color: #eeeeee;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* ###### COMMON REUSABLE CLASSES END ###### */
+
+
+/****** HEADER SECTION *******/
+
+.header {
+    height: 47%;
+    left: 0px;
+    top: 0px;
+    background: var(--header-bg-color);
+    padding: 42px;
+}
+
+.navbar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 30px;
+    align-items: center;
+}
+
+.navitems {
+    margin-right: 36px;
+}
+
+.login {
+    margin-left: auto;
+    margin-right: 0px;
+    font-size: 14px;
+    text-align: center;
+    width: 120px;
+    line-height: 2;
+    background-color: var(--btn-bg-color);
+}
+
+.login .fa{
+    margin-right: 5px;
+}
+
+.btn .fa {
+    margin-left: 5px;
+}
+
+.intro-section {
+    width: 80%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro-section-items {
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.intro-quote {
+    font-size: xxx-large;
+    width: 60%;
+    font-family: 'Londrina Shadow', cursive;
+    color: #eeeeee;
+}
+
+.intro-picture-container img{
+    width: 100%;
+}
+
+.main {
+    margin-top: 70px;
+    width: 100%;
+    justify-content: space-around;
+} 
+
+.top-news-section, 
+.players-info-section {
+    width: calc(100% - 360px);
+    background: lightgrey;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.top-news-container {
+    justify-content: space-around;
+    color: #eeeeee;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.top-news-holder {
+    background-color: #eeeeee;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    flex: 1 1 0;
+    color: #666666;
+    cursor: pointer;
+}
+
+.top-news-holder img {
+    width: 100%;
+}
+
+.news-headings {
+    color: #666666;
+}
+
+.large-news-card {
+    transform: scale(1.1);
+}
+
+.large-news-card .news-footer {
+    font-size: 10px;
+}
+
+.medium-news-card-1 {
+    transform: scale(0.9);
+    margin-left: -3px;
+    margin-right: 20px;
+}
+
+.medium-news-card-2 {
+    transform: scale(0.9);
+    margin-left: 20px;
+    margin-right: -3px;
+}
+
+.small-news-card {
+    transform: scale(0.8);
+}
+
+.slider-dot-design {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+    padding: 10px;
+}
+
+.slider-dot-design label {
+    cursor: pointer;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 50px;
+}
+
+.actual-slide-dots-container {
+    display: none;
+}
+
+
+.news-headings:hover {
+    text-decoration: underline;
+}
+
+.news-footer {
+    font-size: 12px;
+}
+
+.players-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 20px;
+}
+
+.player {
+    background-color: #eeeeee;
+    height: 374px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+
+.player img {
+    width: 100%;
+}
+
+.player-name {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+    color: #18191F;
+}
+
+.footer-section {
+    width: 30%;
+    height: 213px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-section img {
+    width: 70%;
+}
+
+.site-logo p {
+    font-size: 50px;
+    color: darkslateblue;
+    line-height: 2;
+    font-family: cursive;
+}
+
+.social-icons-container {
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.copyright {
+    width: 175px;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}

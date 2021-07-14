@@ -1,8 +1,11 @@
+/****** REUSABLE CSS PROPOERTIES *******/
 :root {
     --main-bg-color: rgba(0, 0, 0, 0.8);
     --header-bg-color:  #2c3e50;
     --btn-bg-color: lightseagreen; 
 }
+
+/****** COMMON TAG STYLES *******/
 
 * {
     margin: 0;
@@ -126,6 +129,7 @@ a {
     display: none;
 }
 
+/****** MAIN SECTION *******/
 .main {
     margin-top: 70px;
     width: 100%;
@@ -141,6 +145,7 @@ a {
     margin-bottom: 20px;
 }
 
+/****** NEWS SLIDER SECTION *******/
 .top-news-container {
     justify-content: space-around;
     color: #eeeeee;
@@ -205,6 +210,10 @@ a {
     border-radius: 50px;
 }
 
+.slider-dot-design label:hover {
+    background-color: var(--btn-bg-color);
+}
+
 .actual-slide-dots-container {
     display: none;
 }
@@ -217,6 +226,8 @@ a {
 .news-footer {
     font-size: 12px;
 }
+
+/****** PLAYERS LIST SECTION *******/
 
 .players-container {
     display: grid;
@@ -245,6 +256,8 @@ a {
     line-height: 40px;
     color: #18191F;
 }
+
+/****** FOOTER SECTION *******/
 
 .footer-section {
     width: 25%;
@@ -277,6 +290,11 @@ a {
 .social-icon {
     width: 32px;
     height: 32px;
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    opacity: 0.8;
 }
 
 .copyright {

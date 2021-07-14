@@ -122,6 +122,10 @@ a {
     width: 100%;
 }
 
+.menubar {
+    display: none;
+}
+
 .main {
     margin-top: 70px;
     width: 100%;
@@ -284,6 +288,13 @@ a {
     body {
         width: 100%;
     }
+    .header {
+        padding: 10px;
+    }
+
+    .navbar {
+        width: 98%;
+    }
     .top-news-section, 
     .players-info-section {
         width: calc(100% - 20px);
@@ -302,4 +313,41 @@ a {
         padding: 20px;
         overflow: hidden;
     }
+
+    .navitems:not(:last-child) {
+        display: none;
+    }
+    
+    hr {
+        display: none;
+    }
+
+    .menubar {
+        display: block;
+    }
+
+    .intro-section  {
+        flex-direction: column;
+    }
+
+    .intro-section .item1 {
+        margin-bottom: 40px;
+    }
+
+    .intro-quote {
+        margin-bottom: 25px;
+    }
+
+    .small-news-card {
+        display: none;
+    }
+
+    .slider-dot-design label:first-child {
+        display: none;
+    }
+
+    .slider-dot-design label:last-child {
+        display: none;
+    }
+
 }

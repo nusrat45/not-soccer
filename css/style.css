@@ -130,7 +130,7 @@ a {
 
 .top-news-section, 
 .players-info-section {
-    width: calc(100% - 360px);
+    width: 72%;
     background: lightgrey;
     margin-left: auto;
     margin-right: auto;
@@ -225,7 +225,6 @@ a {
 
 .player {
     background-color: #eeeeee;
-    height: 374px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     padding: 15px;
 }
@@ -251,12 +250,16 @@ a {
     margin-right: auto;
 }
 
+.footer-content-holder {
+    justify-content: center;
+}
+
 .footer-section img {
     width: 62%;
 }
 
 .site-logo p {
-    font-size: 40px;
+    font-size: 35px;
     color: darkslateblue;
     line-height: 2;
     font-family: cursive;
@@ -264,7 +267,6 @@ a {
 
 .social-icons-container {
     justify-content: center;
-    margin-left: 60px;
     margin-bottom: 10px;
 }
 
@@ -274,7 +276,30 @@ a {
 }
 
 .copyright {
-    width: 175px;
     font-size: 15px;
-    margin-left: 100px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+    .top-news-section, 
+    .players-info-section {
+        width: calc(100% - 20px);
+        background: lightgrey;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .players-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: space-between;
+        row-gap: 20px;
+        column-gap: 20px;
+        padding: 20px;
+        overflow: hidden;
+    }
 }

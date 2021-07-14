@@ -63,6 +63,12 @@ a {
     padding: 42px;
 }
 
+
+.intro-picture-container:hover{
+    transform: rotate(20deg);
+    transition: transform 2s linear;
+}
+
 .navbar {
     margin-left: auto;
     margin-right: auto;
@@ -238,7 +244,7 @@ a {
 }
 
 .footer-section {
-    width: 30%;
+    width: 25%;
     height: 213px;
     margin-top: 50px;
     margin-left: auto;
@@ -246,11 +252,11 @@ a {
 }
 
 .footer-section img {
-    width: 70%;
+    width: 62%;
 }
 
 .site-logo p {
-    font-size: 50px;
+    font-size: 40px;
     color: darkslateblue;
     line-height: 2;
     font-family: cursive;
@@ -258,6 +264,7 @@ a {
 
 .social-icons-container {
     justify-content: center;
+    margin-left: 60px;
     margin-bottom: 10px;
 }
 
@@ -269,7 +276,5 @@ a {
 .copyright {
     width: 175px;
     font-size: 15px;
-    margin-left: auto;
-    margin-right: auto;
-
+    margin-left: 100px;
 }
